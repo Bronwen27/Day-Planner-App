@@ -18,31 +18,30 @@ $(document).ready(function(){
 
     });
 
-
     // set color coded rows according to updating current time
 
-function calandarTimer() {
-
     let currentHour = moment().hours();
-    
-    for (let i = 0; i < $("time-block").length; i++) {
-        currentHour = parseInt($("time-block").attr("id"));
-      }
 
-      if (currentHour > "id") {
-        $("time-block").addClass("future"); 
+    const timeBlockId = parseInt($(this).id.split("-")[0])
+    if (currentHour > timeBlockId) {"past"}
+
+    $(".time-block").each((index) => {
+    
+    currentHour = parseInt(this.attr("id"));
+    if (currentHour > "id") {
+        $(this).addClass("future"); 
     }
 
-     else if (currentHour === "id") {
-        $("time-block").addClass("present");
-     }
+    else if (currentHour === "id") {
+        $(this).addClass("present");
+    }
 
-     else {
-        $("time-block").addClass("past");
-     }
-}
+    else {
+        $(this).addClass("past");
+    }
+})
 
-console.log(calandarTimer)
+
 
 
 })
