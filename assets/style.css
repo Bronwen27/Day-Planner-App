@@ -23,6 +23,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  
 }
 
 .time-block {
@@ -70,11 +71,3 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-.show {
-  display:block;
-}
-
-.notification {
-  display:none;
-  color:#000000
-}
