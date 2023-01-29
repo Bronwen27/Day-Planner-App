@@ -6,6 +6,7 @@ $(document).ready(function(){
     // save button function
     $(".saveBtn").on("click", function(){
 
+
         let timeID = $(this).parent().attr("id")
         let value = $(this).siblings(".description").val();
 
@@ -14,31 +15,34 @@ $(document).ready(function(){
 
         localStorage.setItem(timeID, value);
 
-        $(".notification")
 
-        setTimeout(function(){
-            $(".notification").removeClass("show");
-        }, 5000)
     });
 
-    // set color coded rows according to updating time
 
+    // set color coded rows according to updating current time
 
-    function hourUpdate() {
-        var hour = moment().hours();
+function calandarTimer() {
+
+    let currentHour = moment().hours();
     
-        $(".time-block").each(function() {
-            var currHour = parseInt($(this).attr("id"));
+    for (let i = 0; i < $("time-block").length; i++) {
+        currentHour = parseInt($("time-block").attr("id"));
+      }
 
-    
-            if (currHour > hour) {
-                $(this).addClass("future");
-            } else if (currHour === hour) {
-                $(this).addClass("present");
-            } else {
-                $(this).addClass("past");
-            }
-        })
-    };
+      if (currentHour > "id") {
+        $("time-block").addClass("future"); 
+    }
+
+     else if (currentHour === "id") {
+        $("time-block").addClass("present");
+     }
+
+     else {
+        $("time-block").addClass("past");
+     }
+}
+
+console.log(calandarTimer)
+
 
 })
