@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     let currentHour = moment().hours();
 
-    const timeBlockId = parseInt($(this).id.split("-")[0])
+    const timeBlockId = parseInt($(this).id.split(" ")[0])
     if (currentHour > timeBlockId) {"past"}
 
     $(".time-block").each((index) => {
