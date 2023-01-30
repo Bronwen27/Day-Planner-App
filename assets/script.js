@@ -21,27 +21,33 @@ $(document).ready(function(){
     // set color coded rows according to updating current time
 
     let currentHour = moment().hours();
-
-    const timeBlockId = parseInt($(this).id.split(" ")[0])
-    if (currentHour > timeBlockId) {"past"}
-
-    $(".time-block").each((index) => {
     
-    currentHour = parseInt(this.attr("id"));
-    if (currentHour > "id") {
+    $(".time-block").each(function(){
+        const timeBlockId = parseInt($(this).attr("id").split("-")[0])
+   
+    
+    if (currentHour > timeBlockId) {
         $(this).addClass("future"); 
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+
     }
 
-    else if (currentHour === "id") {
+    else if (currentHour === timeBlockId) {
         $(this).addClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
     }
 
     else {
         $(this).addClass("past");
-    }
-})
-
-
-
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+    }})
 
 })
+
+
+
+
+
