@@ -13,6 +13,8 @@ $(document).ready(function(){
         console.log(timeID);
         console.log(value);
 
+        // show event and time in local storage
+
         localStorage.setItem(timeID, value);
 
 
@@ -25,6 +27,7 @@ $(document).ready(function(){
     $(".time-block").each(function(){
         const timeBlockId = parseInt($(this).attr("id").split("-")[0])
    
+        // conditions to be met 
     
     if (currentHour < timeBlockId) {
         $(this).addClass("future"); 
