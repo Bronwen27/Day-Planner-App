@@ -26,7 +26,7 @@ $(document).ready(function(){
         const timeBlockId = parseInt($(this).attr("id").split("-")[0])
    
     
-    if (currentHour > timeBlockId) {
+    if (currentHour < timeBlockId) {
         $(this).addClass("future"); 
         $(this).removeClass("past");
         $(this).removeClass("present");
