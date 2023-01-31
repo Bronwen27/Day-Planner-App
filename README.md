@@ -17,6 +17,8 @@ In this project I have used HTML, CSS, JavaScript, JQuery and Moment.js to creat
 
 ## Deployed Link:
 
+https://bronwen27.github.io/Work-Day-Planner-App/
+
 ## Usage 
 
 ![image of day planner and relating JavaScript code](assets/images/Screenshot1.png)
@@ -28,4 +30,3 @@ In this project I have used HTML, CSS, JavaScript, JQuery and Moment.js to creat
 Licensed under the MIT license.
 
 
-A calendar application that allows user to save events for each hour of the day.
