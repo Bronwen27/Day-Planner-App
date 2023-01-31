@@ -1,4 +1,4 @@
-// Today's date added to head of page
+// Today's date and time added to head of page
 $('#currentDay').text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
 $(document).ready(function(){
@@ -16,7 +16,9 @@ $(document).ready(function(){
         // show event and time in local storage
 
         localStorage.setItem(timeID, value);
-
+        
+        $("#success-alert").show();
+        setTimeout(function() { $("#success-alert").hide(); }, 5000);
 
     });
 
@@ -27,7 +29,7 @@ $(document).ready(function(){
     $(".time-block").each(function(){
         const timeBlockId = parseInt($(this).attr("id").split("-")[0])
    
-        // conditions to be met 
+        // conditions to be met and their responding colours
     
     if (currentHour < timeBlockId) {
         $(this).addClass("future"); 
