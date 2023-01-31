@@ -13,7 +13,7 @@ In this project I have used HTML, CSS, JavaScript, JQuery and Moment.js to creat
 * A table with a row representing each hour of the work day.
 * A textbox for the user to type the name of their event.
 * A save button for each hour that when clicked, saves the event to local storage, along with the correct time of appointment.
-* A time tracker that colour-coordinates throughout the day to show when the hours and events are in the past, present or future. 
+* A time tracker that colour-coordinates throughout the day to show when the hours and events are in the past, present or future. (grey; past, red; current, green; future).
 
 ## Deployed Link:
 

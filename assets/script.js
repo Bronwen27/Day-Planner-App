@@ -16,6 +16,8 @@ $(document).ready(function(){
         // show event and time in local storage
 
         localStorage.setItem(timeID, value);
+
+        // saved message pops up when save button pressed
         
         $("#success-alert").show();
         setTimeout(function() { $("#success-alert").hide(); }, 5000);
