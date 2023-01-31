@@ -19,6 +19,10 @@ In this project I have used HTML, CSS, JavaScript, JQuery and Moment.js to creat
 
 ## Usage 
 
+![image of day planner and relating JavaScript code](assets/images/Screenshot1.png)
+
+![image of day planner and saved events to local storage](assets/images/Screenshot2.png)
+
 ### License 
 
 Licensed under the MIT license.
